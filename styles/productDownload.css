@@ -1,0 +1,29 @@
+.boder{
+    /*background-image: url("../images/top.jpg");*/
+    width: 70%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    margin-top: 15px;
+    margin-left: 15%;/*
+    background-color: white;
+    border-radius: 1%;*/
+}
+.imgs{
+    max-width:350px;
+    flex:1;
+    padding-top: 1rem;
+    
+}
+.img-name{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    font-size: 1.5rem;
+}

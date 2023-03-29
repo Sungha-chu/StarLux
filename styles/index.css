@@ -1,0 +1,76 @@
+
+.boder{
+    width: 70%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    margin-top: 15px;
+    margin-left: 15%;
+}
+.imgs{
+    max-width:350px;
+    flex:1;
+    padding-top: 1rem;
+    
+}
+.img-name{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+/*---------布告欄資訊----------*/
+.carousel-item{
+    data-bs-interval:"500";
+}
+#p1{
+    height: 500px;
+    margin-top: 20px;
+}
+#p2{
+    height: 500px;
+    margin-top: 20px;
+}
+#p3{
+    margin-top: 20px;
+    height: 500px;
+}
+/*--------------商品資訊列表---------------*/
+.main-info-tit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #4ab57c;
+}
+.main-info-block{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+.main-info{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+.info-photo{
+    max-width:350px;
+    flex:1;
+    padding-top: 1rem;
+}

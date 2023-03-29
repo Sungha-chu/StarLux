@@ -1,0 +1,177 @@
+/* 網頁捲軸【寬度】 */
+::-webkit-scrollbar {
+    max-width: 20px;
+  }
+  
+  /* 網頁捲軸【背景】顏色 */
+  ::-webkit-scrollbar-track {
+    background: #e9fbf0;
+  }
+  
+  /* 網頁捲軸【把手】顏色 */
+  ::-webkit-scrollbar-thumb {
+    background: #10562c;
+  }
+  
+  /* 網頁捲軸【滑過時】把手的顏色 */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #a9efc4;
+  }
+
+  
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: #22ae5b;
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 3;
+}
+li{
+    list-style: none;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+body{
+    padding-bottom: 130px;
+    padding-top: 95px;
+    background-image: url("../images/body-bg.png");
+    background-attachment:fixed;
+    background-position: center;
+    background-size:contain;
+}
+/*---------【標題主選單】----------*/
+.navbar{
+    width: 100%;
+    min-height:70px;
+    top:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+.nav-menu{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 24px;
+    gap:60px;
+    font-size: 1.2rem;
+    color:white;
+}
+.nav-branding{
+    width: 350px;
+}
+.nav-link{
+    transition: 0s ease;
+}
+.nav-link:hover{
+    border-bottom:5px white solid; padding-bottom:2px;
+}
+.hamburger{
+    display: none;
+    cursor:pointer;
+}
+.bar{ 
+    display: block;
+    width:25px;
+    height: 3px;
+    margin: 8px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+/*-----------跑馬燈------------*/
+.run-text{
+    background-color: #6ec496;
+    color:white;
+    font-size: 1rem;
+    position: fixed;
+    z-index: 3;
+}
+/*-----------【底部資訊欄】------------*/
+.bottom-info{
+    background-color: #22ae5b;
+    bottom:0;
+    width: 100%;
+    color:white;
+    position: fixed;
+    min-height:90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bottom-icon{
+    width: 13rem;
+}
+.info-data{
+    align-items: center;
+    padding-left: 2rem;
+    font-size: 1.2rem;
+}
+.info-icon{
+    width: 1rem;
+}
+
+@media screen and (max-width: 1060px){  /*當螢幕小於1160px時的介面*/
+    /******標題主選單******/
+    .nav-branding{
+        width: 300px;
+    }
+    .navbar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+    }
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(14px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        left: -200%;
+        top: 100px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #1d954d;
+        width:100%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        transform: 0.3s;
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+    /******底部資訊欄******/
+    .bottom-icon{
+        display: none;
+    }
+    .bottom-info{
+        flex-direction: column;
+        text-align: center;
+        padding-left: 0;
+    }
+    .info-data{
+        padding-left:0;
+    }
+}
+
